@@ -29,9 +29,9 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-const CLIENT_URL = ["http://localhost:5173"];
-const RP_ID = "localhost";
-const DJANGO_API_URL = "http://localhost:8000"; // Your Django server URL
+const CLIENT_URL = ["https://webauthn-frontend.onrender.com"];
+const RP_ID = "webauthn-frontend.onrender.com";
+const DJANGO_API_URL = "https://webauthn-django.onrender.com"; // Your Django server URL
 
 app.use(cors({ origin: CLIENT_URL, credentials: true }));
 
