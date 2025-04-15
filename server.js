@@ -41,7 +41,6 @@ app.use(cors({ origin: CLIENT_URL, credentials: true }));
 function base64ToBuffer(base64) {
   return Buffer.from(base64, 'base64');
 }
-const { v4: uuidv4 } = require('uuid'); // Add at top of file
 
 app.get("/init-register", async (req, res) => {
   const email = req.query.email;
